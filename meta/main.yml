@@ -1,0 +1,46 @@
+galaxy_info:
+  author: it-praktyk
+  description: A role intended to reboot Linux based system with systemd as a system and service manager.
+  company: IT Praktyk Wojciech Sciesinski
+
+  license: license MIT
+
+  min_ansible_version: 1.2
+
+  github_branch: master
+
+  platforms:
+  - name: Fedora
+    versions:
+    - all
+  - name: Ubuntu
+    versions:
+    - vivid
+    - wily
+    - xenial
+    - yakkety
+  - name: Debian
+    - jessie
+  - name: EL
+    versions:
+    - 7
+  - name: opensuse
+    versions:
+    - 12.2
+    - 12.3
+    - 13.1
+    - 13.2
+  - name: SLES
+    versions:
+    - 12
+    - 12SP1
+  
+  galaxy_tags: 
+  - reboot
+  - restart
+  - shutdown
+  - systemd
+  - wait
+    
+dependencies: []
+  
