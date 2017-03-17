@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/it-praktyk/Ansible-Role-Reboot-And-Wait.svg?branch=master)](https://travis-ci.org/it-praktyk/Ansible-Role-Reboot-And-Wait)
+
 Reboot and Wait
 =========
 
@@ -13,32 +15,32 @@ fatal: [10.0.15.50]: UNREACHABLE! => {"changed": false, "msg": "Failed to connec
 Requirements
 ------------
 
-The role doesn't have any special requirements.
+The role doesn't have any special requirements.  
 
 Role Variables
 --------------
 
-How many seconds reboot need to be delayed
+How many seconds reboot need to be delayed.  
 `
 reboot_delay = 10
 `
 
-Port what need to be checked for a server availability.
+Port what need to be checked for a server availability.  
 `
 return_port = 22
 `
 
-Time in seconds when the first connection attempt will be started
+Time in seconds when the first connection attempt will be started.  
 `
 return_delay = 40
 `
 
-Time in seconds how long the connection probes will be attempted
+Time in seconds how long the connection probes will be attempted.  
 `
 return_timeout = 300
 `
 
-Time in seconds how long started connection probe will be stopped
+Time in seconds how long started connection probe will be stopped.  
 `
 return_connect_timeout = 20
 `
@@ -68,10 +70,10 @@ Full license text: https://opensource.org/licenses/MIT
 Author Information
 ------------------
 
-Author: Wojciech Sciesinski, wojciech[at]sciesinski[dot]net
-Keywords: Ansible, systemd, reboot
+Author: Wojciech Sciesinski, wojciech[at]sciesinski[dot]net  
+Keywords: Ansible, systemd, reboot  
 
-Credits: Marcin Skarbek due to provided answer https://stackoverflow.com/questions/29955605/how-to-reboot-centos-7-with-ansible
+Credits: Marcin Skarbek due to provided answer https://stackoverflow.com/questions/29955605/how-to-reboot-centos-7-with-ansible  
 
 [TODO](TODO.md)
 ----
