@@ -10,8 +10,8 @@
   ignore_errors: true
 
 - name: Wait for server to come back
-  wait_for 
-    host: {{ inventory_hostname }}
+  wait_for: 
+    host: "{{ inventory_hostname }}"
     state: started
     port: "{{ return_port }}"
     delay: "{{ return_delay }}"

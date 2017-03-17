@@ -1,18 +1,18 @@
 ---
 
 # How many seconds reboot need to be delayed
-reboot_delay = 10
+reboot_delay: 10
 
 # SSH port what need to be checked for a server availability
-return_port = 22
+return_port: 22
 
 # Time in seconds when the first connection attempt will be started
-return_delay = 40
+return_delay: 40
 
 # Time in seconds how long the connection probes will be attempted
-return_timeout = 300
+return_timeout: 300
 
 # Time in seconds how long started connection probe will be stopped
-return_connect_timeout = 20
+return_connect_timeout: 20
 
 

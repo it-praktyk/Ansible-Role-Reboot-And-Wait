@@ -18,7 +18,33 @@ The role doesn't have any special requirements.
 Role Variables
 --------------
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+How many seconds reboot need to be delayed
+`
+reboot_delay = 10
+`
+
+Port what need to be checked for a server availability.
+`
+return_port = 22
+`
+
+Time in seconds when the first connection attempt will be started
+`
+return_delay = 40
+`
+
+Time in seconds how long the connection probes will be attempted
+`
+return_timeout = 300
+`
+
+Time in seconds how long started connection probe will be stopped
+`
+return_connect_timeout = 20
+`
+
+Variables started from 'return_' are used by [wait_for Ansible module](https://docs.ansible.com/ansible/wait_for_module.html). Please consult the module documentation if any additional information is needed. 
+
 
 Dependencies
 ------------
@@ -46,3 +72,6 @@ Author: Wojciech Sciesinski, wojciech[at]sciesinski[dot]net
 Keywords: Ansible, systemd, reboot
 
 Credits: Marcin Skarbek due to provided answer https://stackoverflow.com/questions/29955605/how-to-reboot-centos-7-with-ansible
+
+[TODO](TODO.md)
+----
